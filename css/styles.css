@@ -115,13 +115,12 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: #ffffff;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
   display: flex;
   align-items: center;
- 
 }
 
 .header-navigation {
@@ -175,24 +174,17 @@ img {
   flex-wrap: wrap;
 }
 
-.header-mail-link {
-  width: 16px;
-  height: 12px;
-  display: block;
+.header-mail-icon,
+.header-tel-icon {
+  fill: currentColor;
   margin-right: 10px;
-  background-color: var(--white-primary-color);
-}
-.header-tel-link {
-  width: 10px;
-  height: 16px;
-  display: block;
-  margin-right: 10px;
-  background-color: var(--white-primary-color);
-  color: var(--primary-text-color);
 }
 
 .header-info__mail,
 .header-info__tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -208,17 +200,6 @@ img {
   color: var(--accent-color);
 }
 
-.header-mail-icon,
-.header-tel-icon {
-  fill: var(--primary-text-color);
-}
-.header-mail-icon:hover,
-.header-mail-icon:focus,
-.header-tel-icon:hover,
-.header-tel-icon:focus {
-  fill: var(--accent-color);
-}
-
 /* HERO */
 
 /* -------------------Effective Solutions-------------------- */
@@ -226,6 +207,9 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   background-color: var(--background-color-footer);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
@@ -426,23 +410,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .clients-link-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 2px solid var(--accent-color);
+  border: 1.75px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
-.clients-link:hover .clients-link-icon,
-.clients-link:focus .clients-link-icon {
-  fill: var(--accent-color);
-}
+
 
 /* ------------------------Footer---------------------- */
 
@@ -469,7 +451,7 @@ img {
   font-style: normal;
   margin-top: 20px;
 }
-.footer-address:not(:last-child) {
+.footer-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -544,7 +526,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
-  
 }
 .menu-list__btn {
   display: inline-block;
@@ -556,9 +537,7 @@ img {
   padding: 6px 22px;
   color: var(--title-text-color);
   background-color: var(--background-color-team);
-  
 }
-
 
 .menu-list__btn:hover,
 .menu-list__btn:focus {
@@ -575,10 +554,14 @@ img {
 
 .project-item {
   width: calc((100% - 60px) / 3);
-  justify-content: space-between;
+  
 }
-.project-item:hover,
-.project-item:focus {
+
+.project-link{
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
