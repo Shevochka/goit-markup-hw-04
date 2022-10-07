@@ -356,13 +356,13 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
 }
 
 .team-soc-list {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
   gap: 10px;
 }
 
@@ -420,7 +420,7 @@ img {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1.75px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
   color: var(--accent-color);
 }
 
